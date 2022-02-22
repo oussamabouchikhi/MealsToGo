@@ -3,12 +3,12 @@ import styled from "styled-components/native";
 import { Card } from "react-native-paper";
 
 const RestaurantCard = styled(Card)`
-  background-color: "white";
+  background-color: white;
 `;
 
 const RestaurantCardCover = styled(Card.Cover)`
-  background-color: "white";
-  padding: 20;
+  background-color: white;
+  padding: 20px;
 `;
 
 const Title = styled.Text`
