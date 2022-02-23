@@ -35,7 +35,6 @@ export const RestaurantsScreen = () => (
         </>
       )}
       keyExtractor={(item) => item.name}
-      }
     />
   </SafeArea>
 );
