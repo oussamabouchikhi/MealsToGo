@@ -1,12 +1,15 @@
 import React from "react";
+import { Image } from "react-native";
+
 import styled from "styled-components/native";
 import { Card } from "react-native-paper";
 import { SvgXml } from "react-native-svg";
 
+import { Spacer } from "../../../components/spacer/spacer.component";
+import { Text } from "../../../components/typography/text.component";
+
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
-import { Image, Text, View } from "react-native";
-import { Spacer } from "../../../components/spacer/spacer.component";
 
 const RestaurantCard = styled(Card)`
   background-color: ${(props) => props.theme.colors.bg.primary};
@@ -27,6 +30,11 @@ const Rating = styled.View`
   padding-bottom: ${(props) => props.theme.space[2]};
 `;
 
+const Icon = styled.Image`
+  width: 15px; 
+  height: 15px:
+`;
+
 const Section = styled.View`
   flex-direction: row;
   align-items: center;
@@ -35,12 +43,6 @@ const SectionEnd = styled.View`
   flex: 1;
   flex-direction: row;
   justify-content: flex-end;
-`;
-
-const Title = styled.Text`
-  font-family: ${(props) => props.theme.fonts.heading};
-  font-size: ${(props) => props.theme.fontSizes.body};
-  color: ${(props) => props.theme.colors.ui.primary};
 `;
 
 const Address = styled.Text`
@@ -73,7 +75,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
         }}
       />
       <Info>
-        <Title>{name}</Title>
+        <Text variant="label">{name}</Text>
         <Section>
           <Rating>
             {ratingArray.map((_star, i) => (
@@ -82,15 +84,13 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
           </Rating>
           <SectionEnd>
             {isClosedTemporarily ? (
-              <Text variant="label" style={{ color: "red" }}>
-                CLOSED TEMPORARELY
-              </Text>
+              <Text variant="error">CLOSED TEMPORARiLY</Text>
             ) : null}
             <Spacer position="left" size="large">
               {isOpenNow ? <SvgXml xml={open} width={20} height={20} /> : null}
             </Spacer>
             <Spacer position="left" size="large">
-              <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+              <Icon source={{ uri: icon }} />
             </Spacer>
           </SectionEnd>
         </Section>
