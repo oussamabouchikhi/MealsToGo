@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+// import { Image } from "react-native";
 import { Card } from "react-native-paper";
 
 export const RestaurantCard = styled(Card)`
@@ -20,10 +21,10 @@ export const Rating = styled.View`
   padding-bottom: ${(props) => props.theme.space[2]};
 `;
 
-export const Icon = styled.Image`
-  width: 15px; 
-  height: 15px:
-`;
+// export const Icon = styled(Image)`
+//   width: 15px;
+//   height: 15px:
+// `;
 
 export const Section = styled.View`
   flex-direction: row;

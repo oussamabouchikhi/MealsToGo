@@ -9,20 +9,21 @@ const sizeVariants = {
 
 const positionVariants = {
   top: "marginTop",
+  left: "marginLeft",
   right: "marginRight",
   bottom: "marginBottom",
-  left: "marginLeft",
 };
 
 const getVariant = (position, size, theme) => {
-  const property = positionVariants[position];
   const sizeIndex = sizeVariants[size];
+  const property = positionVariants[position];
   const value = theme.space[sizeIndex];
+
   return `${property}:${value}`;
 };
 
-export const SpacerView = styled.View`
-  ${(variant) => variant}
+const SpacerView = styled.View`
+  ${({ variant }) => variant};
 `;
 
 /**
