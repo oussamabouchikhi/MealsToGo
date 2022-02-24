@@ -20,21 +20,24 @@ const RestaurantList = styled(FlatList).attrs({
 })``;
 
 export const RestaurantsScreen = () => {
-  const restaurantsContext = useContext(RestaurantsContext);
+  const { isLoading, error, restaurants } = useContext(RestaurantsContext);
+  console.log(restaurants);
   return (
     <SafeArea>
       <SearchContainer>
         <Searchbar />
       </SearchContainer>
       <RestaurantList
-        data={[{ name: 1 }, { name: 2 }, { name: 3 }]}
-        renderItem={() => (
-          <>
-            <Spacer position="bottom" size="large">
-              <RestaurantInfoCard />
-            </Spacer>
-          </>
-        )}
+        data={restaurants}
+        renderItem={({ item }) => {
+          return (
+            <>
+              <Spacer position="bottom" size="large">
+                <RestaurantInfoCard restaurant={item} />
+              </Spacer>
+            </>
+          );
+        }}
         keyExtractor={(item) => item.name}
       />
     </SafeArea>
