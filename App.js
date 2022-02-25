@@ -1,5 +1,6 @@
 import React from "react";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
+import "react-native-gesture-handler";
 
 import { LocationContextProvider } from "./src/services/location/location.context";
 import { RestaurantsContextProvider } from "./src/services/restaurants/restaurants.context";
