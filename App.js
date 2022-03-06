@@ -17,24 +17,15 @@ import { theme } from "./src/infrastructure/theme";
 import { Navigation } from "./src/infrastructure/navigation";
 
 // Initialize Firebase
-// const firebaseConfig = {
-//   apiKey: "api-key",
-//   authDomain: "project-id.firebaseapp.com",
-//   databaseURL: "https://project-id.firebaseio.com",
-//   projectId: "project-id",
-//   storageBucket: "project-id.appspot.com",
-//   messagingSenderId: "sender-id",
-//   appId: "app-id",
-//   measurementId: "G-measurement-id",
-// };
-
 const firebaseConfig = {
-  apiKey: "AIzaSyA_B5fYgdYpUHZ87zoxifqZ2WS-cwiEs24",
-  authDomain: "mealstogo-8224e.firebaseapp.com",
-  projectId: "mealstogo-8224e",
-  storageBucket: "mealstogo-8224e.appspot.com",
-  messagingSenderId: "513367476372",
-  appId: "1:513367476372:web:8573ebb322a66920becc81",
+  apiKey: "api-key",
+  authDomain: "project-id.firebaseapp.com",
+  databaseURL: "https://project-id.firebaseio.com",
+  projectId: "project-id",
+  storageBucket: "project-id.appspot.com",
+  messagingSenderId: "sender-id",
+  appId: "app-id",
+  measurementId: "G-measurement-id",
 };
 
 if (!firebase.apps.length) {
