@@ -12,14 +12,26 @@ Search for restaurants in multiple cities and, get their details and save your f
 
 ## Screenshots 📸
 
-![Splash screen](assets/splash.png)
-![Animation](screenshots/animation.gif)
-![Favourites](screenshots/favourites.gif)
-![Login](screenshots/login.gif)
-![Map](screenshots/map.gif)
-![Restaurant Detail](screenshots/restaurant-detail.gif)
-![Search](screenshots/search.gif)
-![Settings](screenshots/settings.gif)
+<h4 align="center">Screenshots</h4>
+
+| splash Screen                               | Animation                                           |
+|---------------------------------------------|----------------------------------------------------:|
+| <img src="assets/splash.png" width="300" /> | <img src="screenshots/animation.gif" width="300" /> |
+
+| Login                                           | Restaurant Detail                                           |
+|-------------------------------------------------|------------------------------------------------------------:|
+| <img src="screenshots/login.gif" width="300" /> | <img src="screenshots/restaurant-detail.gif" width="300" /> |
+
+| Favourites                                           | Map                                           |
+|------------------------------------------------------|----------------------------------------------:|
+| <img src="screenshots/favourites.gif" width="300" /> | <img src="screenshots/map.gif" width="300" /> |
+
+| Search                                           | Settings                                           |
+|--------------------------------------------------|---------------------------------------------------:|
+| <img src="screenshots/search.gif" width="300" /> | <img src="screenshots/settings.gif" width="300" /> |
+
+
+
 
 ## Technologies used 🛠️
 
