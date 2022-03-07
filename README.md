@@ -93,11 +93,8 @@ First, head over to [Firabse](https://firebase.google.com/). Tap on `+ Add a pro
 Give it a name <br/>
 ![Firebase](screenshots/firebase-create-project-1.png)
 
-Turn off Analytics <br/>
+Turn off Analytics. Then click on `Create a project` <br/>
 ![Firebase](screenshots/firebase-create-project-2.png)
-
-Then click on `Create a project` <br/>
-![Firebase](screenshots/firebase-create-project-3.png)
 
 And now your project is ready  <br/>
 ![Firebase](screenshots/firebase-project.png)
