@@ -82,12 +82,65 @@ _available scripts_
 
 <details>
 <summary>2. Firebase Setup</summary>
+  
+<details>
+<summary>A. Create a Firebase Project</summary>
 
-Remember to replace the `config` variable in your `firebase.utils.js` with your own config object from the firebase dashboard! Navigate to the project settings and scroll down to the config code. Copy the object in the code and replace the variable in your cloned code.
+First, head over to [Firabse](https://firebase.google.com/). Tap on `+ Add a project` to Create a new project
+![Firebase](screenshots/firebase-console.png)
 
-![Firebase](https://i.ibb.co/6ywMkBf/Screen-Shot-2019-07-01-at-11-35-02-AM.png "image to firebase config")
+
+Give it a name <br/>
+![Firebase](screenshots/firebase-create-project-1.png)
+
+Turn off Analytics <br/>
+![Firebase](screenshots/firebase-create-project-2.png)
+
+Then click on `Create a project` <br/>
+![Firebase](screenshots/firebase-create-project-3.png)
+
+And now your project is ready  <br/>
+![Firebase](screenshots/firebase-project.png)
 
 </details>
+    
+    
+<details>
+<summary>B. Setup Authentication</summary>
+     
+Click on `Get started` <br/>
+![Firebase](screenshots/firebase-auth-1.png)
+
+This is all types of authentication that we have, we want to enable the `Emai/Password` option to allow our users to sign-in with their email and password <br/>
+![Firebase](screenshots/firebase-auth-2.png)
+
+Click on it and then enable the option, then click `Save` <br/>
+![Firebase](screenshots/firebase-auth-3.png)
+
+Now it is Enabled <br/>
+![Firebase](screenshots/firebase-auth-4.png)
+
+</details>
+
+  <details>
+<summary>C. Setup Firebase on the App</summary>
+  Remember to replace the `firebaseConfig` variable in your `App.js` with your own config object from the firebase dashboard! Navigate to the project settings and scroll down to the config code. Copy the object in the code and replace the variable in your cloned code. <br/>
+
+  
+  You need to fill the config object with our project info from firebase <br/>
+![Firebase](screenshots/firebase-project-1.png)
+  
+  Scroll down to the bottom, and select the 3rd option `</>` (which is the web sdk, because we’re using React native) <br/>
+![Firebase](screenshots/firebase-project-2.png)
+  
+  Then add a nickname and register your app <br/>
+![Firebase](screenshots/firebase-project-3.png)
+  
+  And here you can find your project info, copy them then paste them in your app <br/>
+![Firebase](screenshots/firebase-project-4.png)
+
+</details>
+  
 
 </details>
 
